@@ -1,16 +1,13 @@
 import { QueryClient, QueryClientProvider } from "react-query";
+import ContainerGallery from "./components/ContainerGallery";
 
-import GalleryContainer from "./components/GalleryContainer";
-import "./App.scss";
-
-// Create a client
 const queryClient = new QueryClient();
 
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <div className="App">
-        <GalleryContainer />
+        <ContainerGallery />
       </div>
     </QueryClientProvider>
   );

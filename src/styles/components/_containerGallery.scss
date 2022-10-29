@@ -8,26 +8,8 @@
 /* Create four equal columns that sits next to each other */
 .column {
   flex: 25%;
-  width: 23%;
+  max-width: 500px;
   padding: 0 4px;
-
-  .photo {
-    position: relative;
-    margin-top: 8px;
-    vertical-align: middle;
-    img {
-      width: 100%;
-    }
-    .fav {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      font-size: 1.3rem;
-      &:hover {
-        color: orange;
-      }
-    }
-  }
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
